@@ -1,23 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
 
+const entries = [
+  "Black Backed Seagul",
+  "Lord of the Rings",
+  "Cool Runnings",
+  "Went for a drink / meal",
+  "Took photos",
+  "Played games",
+  "Pirate ships",
+  "Went for a walk",
+  "Met with friends",
+]
+
+const Checkbox = () => {
+  return (
+    <div className="checkbox" />
+  )
+}
+
+const Entry = ({title, checked}) => {
+  return (
+    <div className="entry-container">
+      <Checkbox />
+      <p>{title}</p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Weekend Bingo!</h1>
+      {entries.map(entry => (
+        <Entry title={entry} />
+      ))}
     </div>
   );
 }
