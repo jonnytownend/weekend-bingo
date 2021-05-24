@@ -4,7 +4,7 @@ import './App.css';
 const entries = [
   "Black Backed Seagul",
   "Lord of the Rings",
-  "Cool Runnings",
+  "Wated a film / binge-watched a series",
   "Went for a drink / meal",
   "Took photos",
   "Played games",
