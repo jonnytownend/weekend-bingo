@@ -1,0 +1,15 @@
+star-container {
+  position: relative;
+}
+
+.star {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.star:hover {
+  cursor: pointer;
+}
+.star.checked {
+  color: gold;
+}
