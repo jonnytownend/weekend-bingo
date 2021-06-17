@@ -95,3 +95,7 @@
   display: inline;
   padding: 4px 20px;
 }
+
+.counter {
+  transition: 0.3s transform;
+}
