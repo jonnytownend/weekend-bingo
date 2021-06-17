@@ -1,11 +1,16 @@
 .App {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bingo-board {
   border: 1px solid black;
-  min-width: 700px;
+  max-width: 800px;
   text-align: center;
   left: 50%;
-  transform: translateX(-50%);
   padding: 20px;
+  margin-top: 40px;
   top: 30px;
 }
 
@@ -22,6 +27,7 @@
 
 .checkbox:hover {
   cursor: pointer;
+  background-color: rgb(230, 230, 235);
 }
 
 .checkbox.checked {
@@ -39,6 +45,7 @@
 }
 .star:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .star.checked {
   color: gold;
@@ -64,4 +71,27 @@
 
 .entry-container > * {
   margin-left: 10px;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.instructions > p{
+  margin: 0;
+}
+
+.clear-button-container {
+  padding-top: 20px;
+}
+
+.clear-button {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline;
+  padding: 4px 20px;
 }
